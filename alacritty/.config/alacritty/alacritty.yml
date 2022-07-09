@@ -1,5 +1,8 @@
 # Colors (One Darker)
 # Note I am using alacritty-ligatures until ligatures make it upstream
+shell:
+  program: /bin/zsh
+
 colors:
   # Default colors
   primary:
@@ -50,8 +53,6 @@ colors:
 #     magenta: "#C678DD"
 #     cyan: "#56B6C2"
 #     white: "#abb2bf"
-
-  background_opacity: 0.2
 
   # Change cursor colors
   cursor:
@@ -105,7 +106,7 @@ window:
 
 # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
-
+  opacity: 0.8
   # # If `true`, bold text is drawn using the bright color variants.
   # draw_bold_text_with_bright_colors: true
 
