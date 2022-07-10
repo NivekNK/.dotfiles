@@ -1,0 +1,87 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "palette": {
+        "black": "#282c34",
+        "red": "#e06c75",
+        "green": "#45f1c2",
+        "yellow": "#e5c07b",
+        "blue": "#61afef",
+        "magenta": "#CD4277",
+        "cyan": "#14A5AE",
+        "white": "#dcdfe4"
+    },
+    "console_title_template": "{{ .UserName }}@{{ .HostName }}",
+    "blocks": [
+        {
+            "alignment": "left",
+            "segments": [
+                {
+                    "foreground": "p:magenta",
+                    "style": "plain",
+                    "template": "\u250c ",
+                    "type": "text"
+                },
+                {
+                    "foreground": "p:cyan",
+                    "properties": {
+                        "folder_separator_icon": "/",
+                        "style": "full",
+                        "home_icon": "~ "
+                    },
+                    "style": "plain",
+                    "template": "{{ .Path }}",
+                    "type": "path"
+                },
+                {
+                    "properties": {
+                        "fetch_status": true,
+                        "fetch_stash_count": true,
+                        "fetch_worktree_count": true
+                    },
+                    "style": "plain",
+                    "template": " <p:magenta></> <p:cyan>(</>{{ if or (.Working.Changed) (.Staging.Changed) (gt .StashCount 0) }}<p:magenta>{{ .HEAD }}</>{{ else }}<p:green>{{ .HEAD }}</>{{ end }}{{ if (gt .Ahead 0)}}<p:cyan>{{ .BranchStatus }}</>{{ end }}{{ if (gt .Behind 0)}}<p:cyan>{{ .BranchStatus }}</>{{ end }}{{ if .Staging.Changed }} <p:green>{{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }} <p:red>{{ .Working.String }}</>{{ end }}<p:cyan>)</>",
+                    "type": "git"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "foreground": "p:magenta",
+                    "style": "plain",
+                    "template": "\u2514 ",
+                    "type": "text"
+                },
+                {
+                    "foreground": "p:white",
+                    "style": "plain",
+                    "template": "{{ .UserName }}",
+                    "type": "session"
+                },
+                {
+                    "foreground": "p:magenta",
+                    "style": "plain",
+                    "template": "@",
+                    "type": "text"
+                },
+                {
+                    "foreground": "p:white",
+                    "style": "plain",
+                    "template": "{{ .HostName }}",
+                    "type": "session"
+                },
+                {
+                    "foreground": "p:magenta",
+                    "style": "plain",
+                    "template": "  ",
+                    "type": "text"
+                }
+            ],
+            "type": "prompt"
+        }
+    ],
+    "version": 2
+}

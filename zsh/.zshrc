@@ -38,7 +38,7 @@ source "$ZDOTDIR/zsh-functions"
 zsh_add_file "zsh-exports"
 zsh_add_file "zsh-vim-mode"
 zsh_add_file "zsh-aliases"
-zsh_add_file "zsh-prompt"
+# zsh_add_file "zsh-prompt"
 
 # Plugins
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
@@ -101,3 +101,5 @@ setxkbmap -option caps:escape
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/nk.omp.json)"
