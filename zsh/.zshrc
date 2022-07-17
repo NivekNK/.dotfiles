@@ -52,14 +52,15 @@ zsh_add_plugin "djui/alias-tips"
 zsh_add_plugin "jgogstad/passwordless-history"
 zsh_add_plugin "mdumitru/git-aliases"
 zsh_add_plugin "mdumitru/fancy-ctrl-z"
+zsh_add_plugin "MikeDacre/careful_rm"
 zsh_add_completion "esc/conda-zsh-completion" false
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
 # More completions https://github.com/zsh-users/zsh-completions
 
 # Key-bindings
-bindkey -s '^o' 'ranger^M'
+# bindkey -s '^o' 'ranger^M'
 bindkey -s '^f' 'zi^M'
-bindkey -s '^s' 'ncdu^M'
+# bindkey -s '^s' 'ncdu^M'
 # bindkey -s '^n' 'nvim $(fzf)^M'
 # bindkey -s '^v' 'nvim\n'
 # bindkey -s '^z' 'zi^M'
