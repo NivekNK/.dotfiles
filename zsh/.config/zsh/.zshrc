@@ -54,6 +54,7 @@ zsh_add_plugin "mdumitru/git-aliases"
 zsh_add_plugin "mdumitru/fancy-ctrl-z"
 zsh_add_plugin "MikeDacre/careful_rm"
 zsh_add_plugin "MichaelAquilina/zsh-auto-notify"
+zsh_add_plugin "TwoPizza9621536/zsh-exa"
 zsh_add_completion "esc/conda-zsh-completion" false
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
 # More completions https://github.com/zsh-users/zsh-completions
