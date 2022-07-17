@@ -51,6 +51,7 @@ zsh_add_plugin "sudosubin/zsh-github-cli"
 zsh_add_plugin "djui/alias-tips"
 zsh_add_plugin "jgogstad/passwordless-history"
 zsh_add_plugin "mdumitru/git-aliases"
+zsh_add_plugin "mdumitru/fancy-ctrl-z"
 zsh_add_completion "esc/conda-zsh-completion" false
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
 # More completions https://github.com/zsh-users/zsh-completions
@@ -61,7 +62,7 @@ bindkey -s '^f' 'zi^M'
 bindkey -s '^s' 'ncdu^M'
 # bindkey -s '^n' 'nvim $(fzf)^M'
 # bindkey -s '^v' 'nvim\n'
-bindkey -s '^z' 'zi^M'
+# bindkey -s '^z' 'zi^M'
 bindkey '^[[P' delete-char
 bindkey "^p" up-line-or-beginning-search # Up
 bindkey "^n" down-line-or-beginning-search # Down
