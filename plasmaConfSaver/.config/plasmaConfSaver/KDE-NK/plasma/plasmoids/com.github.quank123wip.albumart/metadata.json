@@ -1,0 +1,30 @@
+{
+    "KPlugin": {
+        "Authors": [{
+            "Email": "quank123wip@outlook.com",
+            "Name": "Quank"
+        }],
+        "Category": "Utilities",
+        "Description": "Show your album picture on your desktop.",
+        "EnabledByDefault": true,
+        "FormFactors": [
+            "tablet",
+            "handset",
+            "desktop"
+        ],
+        "Icon": "applications-system",
+        "Id": "com.github.quank123wip.albumart",
+        "License": "LGPL-2.1+",
+        "Name": "AlbumArt",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "1.0",
+        "Website": "https://github.com/quank123wip/AlbumArt"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-NotificationArea": "true",
+    "X-Plasma-NotificationAreaCategory": "Utilities",
+    "X-Plasma-StandAloneApp": true
+}

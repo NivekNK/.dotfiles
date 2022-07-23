@@ -1,0 +1,34 @@
+MenuBar=Disabled
+
+[DetailsMode]
+PreviewSize=32
+
+[ExtractDialog]
+DirHistory[$e]=/run/media/nivek/SSD/UnrealEngine/
+eDP-1 Height 1920x1080=541
+eDP-1 Width 1920x1080=1270
+
+[General]
+Version=201
+ViewPropsTimestamp=2022,7,7,21,7,39.297
+
+[IconsMode]
+PreviewSize=48
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+Recent Files[$e]=file:$HOME,file:$HOME
+Recent URLs[$e]=file:///run/media/nivek/SSD/UnrealEngine/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+eDP-1 Height 1920x1080=599
+eDP-1 Width 1920x1080=452
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[Search]
+Location=Everywhere
