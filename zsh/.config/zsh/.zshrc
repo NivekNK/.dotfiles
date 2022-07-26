@@ -113,3 +113,5 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/nk.omp.json)"
 eval "$(thefuck --alias)"
 
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT=" "
+
+export PATH="$PATH:$HOME/.dotnet/tools"
